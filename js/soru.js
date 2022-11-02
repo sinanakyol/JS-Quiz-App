@@ -15,12 +15,12 @@ let sorular = [
     "c"
   ),
   new Soru(
-    "2-Which method removes the last element from an array?",
+    "2-Which method removes last element from array?",
     { a: "pop", b: "shift", c: "indexOf", d: "push" },
     "a"
   ),
   new Soru(
-    "3- Which method adds a new element to an array (at the end)?",
+    "3- Which method adds new element to array (at the end)?",
     { a: "filter", b: "pop", c: "length", d: "push" },
     "d"
   ),
