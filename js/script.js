@@ -105,7 +105,7 @@ function soruSayisiniGoster(soruSirasi, toplamSoru) {
 }
 
 function skoruGoster(toplamSoru, dogruCevap) {
-  let tag = `You gave ${dogruCevap} correct answers out of ${toplamSoru} questions.`;
+  let tag = `You gave ${dogruCevap} correct answer out of ${toplamSoru} questions.`;
   document.querySelector(".score_box .score_text").innerHTML = tag;
 }
 
