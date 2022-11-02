@@ -142,12 +142,13 @@ function startTimer(time) {
   }
 }
 
+// timer total değeri 1000'dir. 1000/25 = 40   40*10sn = 400 (line-width)
 let time_lineDOM = document.querySelector(".time_line");
 let counter_line;
 function startTimeLiner() {
   let line_width = 0;
 
-  counter_line = setInterval(timer, 28);
+  counter_line = setInterval(timer, 27);
 
   function timer() {
     line_width += 1;
