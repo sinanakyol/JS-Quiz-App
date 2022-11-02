@@ -32,14 +32,16 @@ btn_nextDOM.addEventListener("click", function () {
     document.querySelector(".score_box").classList.add("active");
     skoruGoster(quiz.sorular.length, quiz.dogruCevapSayisi);
   }
-  document.querySelector(".time_text").innerHTML = "Kalan Süre"; // Yeni soruda <Süre Bitti> textini düzeltmek için.
+  document.querySelector(".time_text").innerHTML = "Time"; // Yeni soruda <Süre Bitti> textini düzeltmek için.
 });
 
+// Testi Bitir.
 let btn_quitDOM = document.querySelector(".btn-quit");
 btn_quitDOM.addEventListener("click", function () {
   window.location.reload(); //sayfa tekrar yüklenir. (en baştan)
 });
 
+// Tekrar Başlat.
 let btn_replayDOM = document.querySelector(".btn-replay");
 btn_replayDOM.addEventListener("click", function () {
   quiz.soruIndex = 0;
@@ -122,7 +124,7 @@ function startTimer(time) {
     if (time < 0) {
       clearInterval(counter); //Saniyeyi Sıfırlar.
 
-      time_textDOM.innerHTML = "Süre Bitti";
+      time_textDOM.innerHTML = "Time's Up";
 
       let cevap = quiz.soruGetir().dogruCevap;
 
@@ -145,13 +147,13 @@ let counter_line;
 function startTimeLiner() {
   let line_width = 0;
 
-  counter_line = setInterval(timer, 20);
+  counter_line = setInterval(timer, 28);
 
   function timer() {
     line_width += 1;
     time_lineDOM.style.width = line_width + "px";
 
-    if (line_width > 549) {
+    if (line_width > 399) {
       clearInterval(counter_line);
     }
   }
