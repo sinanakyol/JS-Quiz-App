@@ -10,23 +10,23 @@ Soru.prototype.cevabiKontrolEt = function (cevap) {
 
 let sorular = [
   new Soru(
-    "1-Hangisi javascript paket yönetim uygulamasıdır?",
-    { a: "Node.js", b: "Typescript", c: "Npm", d: "Nuget" },
+    "1-Which one is not a string method?",
+    { a: "slice", b: "trim", c: "pop", d: "split" },
     "c"
   ),
   new Soru(
-    "2-Hangisi frontend kapsamında değerlendirilmez?",
-    { a: "css", b: "html", c: "javascript", d: "sql" },
-    "d"
-  ),
-  new Soru(
-    "3-Hangisi backend kapsamında değerlendirilir?",
-    { a: "Node.js", b: "Typescript", c: "angular", d: "react" },
+    "2-Which method removes the last element from an array?",
+    { a: "pop", b: "shift", c: "indexOf", d: "push" },
     "a"
   ),
   new Soru(
-    "4-Hangisi javascript programlama dilini kullanmaz?",
-    { a: "react", b: "angular", c: "vuejs", d: "asp.net" },
+    "3- Which method adds a new element to an array (at the end)?",
+    { a: "filter", b: "pop", c: "length", d: "push" },
     "d"
+  ),
+  new Soru(
+    "4-Which method slices out a piece of an array?",
+    { a: "charAt", b: "slice", c: "splice", d: "join" },
+    "b"
   ),
 ];
