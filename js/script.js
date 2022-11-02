@@ -148,7 +148,7 @@ let counter_line;
 function startTimeLiner() {
   let line_width = 0;
 
-  counter_line = setInterval(timer, 27);
+  counter_line = setInterval(timer, 28);
 
   function timer() {
     line_width += 1;
