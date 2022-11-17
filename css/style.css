@@ -1,5 +1,5 @@
 body {
-  background-image: url("../wall.webp");
+  background-image: url("../img/wall.webp");
 }
 body::before {
   content: "";
